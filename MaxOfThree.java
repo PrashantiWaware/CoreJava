@@ -1,15 +1,15 @@
-package MarchEighteenr_CONTROL_STATMENT_IF_ELSE;
+package AprilFifth_TEST;
 
 public class MaxOfThree {
 
 	public static void main(String[] args) {
-		int a=23,b=2,c=78;
+		int a=23,b=89,c=8;
 		if(a>b && a>c) {
-			System.out.println("Max is >> "+a);
+			System.out.println(a+" is max number");
 		}else if(b>a && b>c) {
-			System.out.println("Max is>>"+b);
+			System.out.println(b+" is max number");
 		}else {
-			System.out.println("Max is >>"+c);
+			System.out.println(c+" is max number");
 		}
 
 	}
