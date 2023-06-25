@@ -1,18 +1,17 @@
-package May_Fouth_EXCEPTION_TEST;
+package May_Seventeen_Revision;
 
-public class B {
-
-	public static void main(String[] args) {
-		try {
-			System.out.println(11/0);
-		}catch(Exception e) {
-			System.out.println(33);
-		}
-		catch(ArithmeticException e)
-		{
-			System.out.println(22);
-		}
-
+public class B extends A {
+	
+	B(){
+		System.out.println(3);
 	}
-
+	
+	static void {
+		System.out.println(4);
+	}
+	
+	void m1() {
+		System.out.println(5);
+	}
+	
 }
