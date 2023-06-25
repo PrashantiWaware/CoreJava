@@ -1,7 +1,15 @@
-package AprilSeventh_INHERITANCE;
+package AprilTwelve_ABSTRACTION;
 
-public class Shape {
+public abstract class Shape {
+	int length,r,side,width;
 	
-	int radius,length,width,side;
+	
+	void calArea() {
+		
+	}
+	
+	void drawShape() {
+		
+	}
 
 }

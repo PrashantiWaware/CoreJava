@@ -1,11 +1,11 @@
 package AprilTwelve_ABSTRACTION;
 
-public class TestAllShape {
+public class Test_XYZ {
 
 	public static void main(String[] args) {
-		Shape s= new Shape();
-		XYZ obj=new XYZ();
-			
+		XYZ_I obj=new XYZ_I();
+		obj.m1();
+		obj.m2();
 		
 
 	}
