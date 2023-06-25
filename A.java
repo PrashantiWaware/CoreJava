@@ -1,15 +1,23 @@
-package May_Eighteen_TraceTheOutput;
+package May_Ninteen_LogicalTest;
 
 public class A {
-	int a=10;
 	
-	A(int a){
-		this.a=a;
-		
+	 
+         A()
+        {
+             System.out.println("Default Constructor");
+         }
+         A(int a)
+        {
+             System.out.println(a);
+        }
+  public static void main(String []args)
+  {
+	  A a=new A();
+      A a1=new A(6);
+  }
+
+	
 	}
 
-	void m1() {
-		System.out.println("hello"+a);
-	}
 
-}
