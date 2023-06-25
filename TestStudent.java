@@ -1,15 +1,17 @@
-package MarchTwentyNine_CONSTRUCTOR;
+package MarchThirty_ENCAPSULATION;
 
 public class TestStudent {
 
 	public static void main(String[] args) {
-		Student s1=new Student(100,"Prashanti",60.89f);
+		Student s1=new Student(12,"Prashanti",67.89f);
 		s1.display();
 		
-		System.out.println("=========================");
+		s1.setPer(101.0f);
+		System.out.println(s1.getPer());
+		s1.display();
 		
-		Student s2=new Student(101,"Rupnur",89.78f);
-		s2.display();
+		System.out.println(s1);
+		
 
 	}
 

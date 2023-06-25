@@ -1,34 +1,46 @@
-package MarchTwentyNine_CONSTRUCTOR;
+package MarchThirty_ENCAPSULATION;
 
 public class Employee {
 	int emp_id;
-	String emp_name;
-	float basic_sal;
+	private int age;
+	String name;
+	double salary;
 	
 	Employee(){
 		
 	}
-	
-	Employee(int emp_id,String emp_name,float basic_sal){
-		this.emp_id=emp_id;
-		this.emp_name=emp_name;
-		this.basic_sal=basic_sal;
+
+	public Employee(int emp_id, int age, String name, double salary) {
+		
+		this.emp_id = emp_id;
+		this.age = age;
+		this.name = name;
+		this.salary = salary;
 	}
 	
-	void Gross_sal() {
-		float DA=(10*basic_sal)/100;
-		float HRA=(15*basic_sal)/100;
-		System.out.println("DA= "+DA);
-		System.out.println("HRA= "+HRA);
-		System.out.println("Gross_sal>>"+(basic_sal+DA+HRA));
-		
+	void setAge(int age) {
+		if(age>17)
+			this.age=age;
+		else
+			System.out.println("Invalid age");
+	}
+	
+	int getAge() {
+		return age;
 	}
 	
 	void display() {
-		System.out.println("Employee Details>>");
-		System.out.println("Employee id>>"+emp_id);
-		System.out.println("Employee name>>"+emp_name);
-		System.out.println("Employee Basic_sal>>"+basic_sal);
+		System.out.println(emp_id+" "+age+" "+name+" "+salary);
 	}
+
+	@Override
+	public String toString() {
+		return "Employee [emp_id=" + emp_id + ", age=" + age + ", name=" + name + ", salary=" + salary + "]";
+	}
+	
+	
+	
+	
+	
 
 }
