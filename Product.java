@@ -1,26 +1,38 @@
-package MarchTwentyEight_ACCEPT_DISPLAY_THIS_Keyword;
+package MarchTwentyNine_CONSTRUCTOR;
 
 public class Product {
-	int prod_id;
-	String prod_name;
-	int prod_qty;
+	int Prod_id;
+	String Prod_name;
 	float cost;
+	int qty;
 	
-	void accept(int prod_id,String prod_name,int prod_qty,float cost) {
-		this.prod_id=prod_id;
-		this.prod_name=prod_name;
-		this.prod_qty=prod_qty;
+	Product(){
+		
+	}
+	
+	
+	 Product(int Prod_id,String Prod_name,float cost,int qty) {
+		this.Prod_id=Prod_id;
+		this.Prod_name=Prod_name;
 		this.cost=cost;
+		this.qty=qty;
+	}
+	
+	void Total_cost() {
+		
+		System.out.println("Total_cost>>"+(qty*cost));
 		
 	}
 	
 	void display() {
 		System.out.println("Product details>>");
-		System.out.println("Product id>>"+prod_id);
-		System.out.println("Product name>>"+prod_name);
-		System.out.println("Product qty>>"+prod_qty);
-		System.out.println("Product cost>>"+cost);
-		
+		System.out.println("Prod_id: "+Prod_id);
+		System.out.println("Prod_name: "+Prod_name);
+		System.out.println("Prod_cost: "+cost);
+		System.out.println("Prod_qty: "+qty);
 	}
+
+
+	
 
 }

@@ -1,17 +1,26 @@
-package MarchTwentySeven_CLASSOBJ;
+package MarchTwentyNine_CONSTRUCTOR;
 
 public class Student {
 	int id;
 	String name;
 	float per;
 	
-	void Dostudy() {
-		System.out.println(name+" is doing study");
+	Student(){
+		
 	}
 	
-	void Doassignment() {
-		System.out.println(name+" is doing assignment");
+	Student(int id,String name,float per){
+		this.id=id;
+		this.name=name;
+		this.per=per;
+		
 	}
 	
+	void display() {
+		System.out.println("Student details>>>");
+		System.out.println("Student id: "+id);
+		System.out.println("Student name: "+name);
+		System.out.println("Student per: "+per);
+	}
 
 }
