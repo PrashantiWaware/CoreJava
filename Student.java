@@ -1,44 +1,26 @@
-package MarchThirty_ENCAPSULATION;
+package AprilSix_INHERITANCE;
 
-public class Student {
-	int id;
-	String name;
-	private float per;
+public class Student extends Person {
+	float per;
+	String course;
 	
-	Student(){
-		
-	}
-
-	public Student(int id, String name, float per) {
-		this.id = id;
-		this.name = name;
+	
+	public Student(int id,String name,int mob,float per, String course) {
+		super( id, name, mob);
 		this.per = per;
-	}
+		this.course = course;
 	
-	public void setPer (float per) {
-		if(per>0 && per<=100) 
-			this.per=per;
-			else
-				System.out.println("Invalid percentage");
-		
-	}
-	
-	float getPer() {
-		return per;
-		
 	}
 	
 	void display() {
-		System.out.println(id+" "+name+" "+per);
+		System.out.println(id+" "+name+" "+mob+" "+per+" "+course);
 	}
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", per=" + per + "]";
+		return "Student [per=" + per + ", course=" + course + ", id=" + id + ", name=" + name + ", mob=" + mob + "]";
 	}
 	
 	
 	
-	
-
 }

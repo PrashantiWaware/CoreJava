@@ -1,42 +1,36 @@
-package MarchThirty_ENCAPSULATION;
+package AprilSix_INHERITANCE;
 
-public class Employee {
-	int emp_id;
-	private int age;
-	String name;
-	double salary;
+public class Employee extends Person{
+	String dept;
+	int salary;
 	
-	Employee(){
-		
-	}
-
-	public Employee(int emp_id, int age, String name, double salary) {
-		
-		this.emp_id = emp_id;
-		this.age = age;
-		this.name = name;
+	
+	
+	
+	
+	
+	
+	public Employee(int id,String name,int mob,String dept, int salary) {
+		super(id,name,mob);
+		this.dept = dept;
 		this.salary = salary;
 	}
 	
-	void setAge(int age) {
-		if(age>17)
-			this.age=age;
-		else
-			System.out.println("Invalid age");
-	}
-	
-	int getAge() {
-		return age;
-	}
-	
 	void display() {
-		System.out.println(emp_id+" "+age+" "+name+" "+salary);
+		System.out.println(id+" "+name+" "+mob+" "+dept+" "+salary);
 	}
+
+
+
+
+
+
 
 	@Override
 	public String toString() {
-		return "Employee [emp_id=" + emp_id + ", age=" + age + ", name=" + name + ", salary=" + salary + "]";
+		return "Employee [dept=" + dept + ", salary=" + salary + ", id=" + id + ", name=" + name + ", mob=" + mob + "]";
 	}
+	
 	
 	
 	
