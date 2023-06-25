@@ -1,12 +1,12 @@
-package AprilSix_INHERITANCE;
+package ThirtyOne;
 
 public class TestStudent {
 
 	public static void main(String[] args) {
-		Student s1=new Student(12,"Prashanti",45565657,78.89f,"Testing");
-		s1.display();
-		System.out.println(s1);
+		Student s1=new Student(100,"Prashanti",78.89f);
 		
+		s1.setPer(101.00f);
+		System.out.println(s1);
 
 	}
 
