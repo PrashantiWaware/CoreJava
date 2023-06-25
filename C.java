@@ -1,15 +1,17 @@
-package TwentyfourthAprilPattern;
+package May_Fouth_EXCEPTION_TEST;
 
-public class C {
+public class C extends Exception {}
+class Main{
 
 	public static void main(String[] args) {
-		String s="Pranil";
-		System.out.println("Original s>>"+s);
-		s.toUpperCase();
-		String neee=s.concat(" Rupnur");
-		System.out.println("After s>>"+s);
-		System.out.println("After neee>>"+neee);
-		
+		try {
+			throw new Test();
+		}catch(Test t) {
+			System.out.println("Got the TEST Exception");
+		}
+		finally {
+			System.out.println("Inside Finally Block");
+		}
 
 	}
 
