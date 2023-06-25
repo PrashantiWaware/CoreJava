@@ -1,36 +1,33 @@
-package MarchTwentyNine_CONSTRUCTOR;
+package MayTwo_COLLECTION;
 
 public class Product {
-	int Prod_id;
-	String Prod_name;
-	float cost;
+	int id;
+	String name;
 	int qty;
+	float cost;
 	
 	Product(){
 		
 	}
+
+
 	
-	
-	 Product(int Prod_id,String Prod_name,float cost,int qty) {
-		this.Prod_id=Prod_id;
-		this.Prod_name=Prod_name;
-		this.cost=cost;
-		this.qty=qty;
-	}
-	
-	void Total_cost() {
-		
-		System.out.println("Total_cost>>"+(qty*cost));
+	public Product(int id, String name, int qty, float cost) {
+		this.id = id;
+		this.name = name;
+		this.qty = qty;
+		this.cost = cost;
 		
 	}
+
 	
-	void display() {
-		System.out.println("Product details>>");
-		System.out.println("Prod_id: "+Prod_id);
-		System.out.println("Prod_name: "+Prod_name);
-		System.out.println("Prod_cost: "+cost);
-		System.out.println("Prod_qty: "+qty);
+	
+	
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", qty=" + qty + ", cost=" + cost + "]";
 	}
+
 
 
 	
