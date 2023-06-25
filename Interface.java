@@ -1,6 +1,6 @@
 package ThirteenAprilPattern;
 
-public class A {
+public interface Interface {
 	int a;
 	final int b=11;
 	static int c;
