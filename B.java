@@ -1,17 +1,19 @@
-package May_Seventeen_Revision;
+package May_Eighteen_TraceTheOutput;
 
-public class B extends A {
+public class B {
+int a=10;
 	
 	B(){
-		System.out.println(3);
+		this.a=100;
+		
 	}
 	
-	static void {
-		System.out.println(4);
+	B(int a){
+		this.a=a;
 	}
-	
+
 	void m1() {
-		System.out.println(5);
+		System.out.println("hello"+a);
 	}
-	
+
 }

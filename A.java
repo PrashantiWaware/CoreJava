@@ -1,21 +1,15 @@
-package May_Seventeen_Revision;
+package May_Eighteen_TraceTheOutput;
 
 public class A {
+	int a=10;
 	
-	A(){
-		System.out.println(1);
-	}
-	
-	static void {
-		System.out.println(2);
-	}
-	
-	public static void main(String[] args) {
-		B aa=new B();
-		aa.m1();
+	A(int a){
+		this.a=a;
 		
-
 	}
 
-	
+	void m1() {
+		System.out.println("hello"+a);
+	}
+
 }

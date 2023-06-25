@@ -1,9 +1,9 @@
 package May_Eighteen_TraceTheOutput;
 
-public class TestA {
+public class TestB {
 
 	public static void main(String[] args) {
-		A obj=new A(100);
+		B obj=new B();
 		obj.m1();
 		
 
