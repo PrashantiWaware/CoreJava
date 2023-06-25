@@ -1,20 +1,17 @@
-package MarchTwentySeven_CLASSOBJ;
+package MarchTwentyEight_ACCEPT_DISPLAY_THIS_Keyword;
 
 public class TestStudent {
 
 	public static void main(String[] args) {
-		Student s1=new Student();
-		s1.id=23;
-		s1.name="Prashanti";
-		s1.per=70.78f;
+		Student_withoutTHIS s1=new Student_withoutTHIS();
+		s1.accept(23, "Prashanti", 78.89f);
+		s1.display();
 		
-		System.out.println("Student details>>");
-		System.out.println("id>> "+s1.id);
-		System.out.println("name>> "+s1.name);
-		System.out.println("per>> "+s1.per);
+		System.out.println("================");
 		
-		s1.Doassignment();
-		s1.Dostudy();
+		Student_withoutTHIS s2=new Student_withoutTHIS();
+		s2.accept(34, "Waware", 67.78f);
+		s2.display();
 
 	}
 
