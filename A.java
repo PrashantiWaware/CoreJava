@@ -1,9 +1,13 @@
-package AprilSix_INHERITANCE;
+package AprilSeventh_INHERITANCE;
 
 public class A {
 	
-	A(){
-		System.out.println("A-Const");
+	void m1A() {
+		System.out.println("A-m1");
+	}
+
+	void m2A() {
+		System.out.println("A-m2");
 	}
 
 }
