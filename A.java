@@ -1,15 +1,16 @@
-package FourteennAprilPattern;
+package SeventeenApril;
 
 public class A {
-	int a=10;
-	static int b=20;
-	
-	
-	
-	/*public static void main(String[]args) {
-		A obj=new A();
-		System.out.println(obj.a+obj.b);
-		
+	public static void main(String[]args) {
+	/*for(int i=5;i>=1;i--) {
+		System.out.println(i);
+		i--;
 	}*/
+		for(int i=100;i>=1;i--) {
+			System.out.println(i);
+			
+		}
+	
 
+}
 }

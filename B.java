@@ -1,15 +1,14 @@
-package AprilSeventh_INHERITANCE;
+package SeventeenApril;
 
-public class B extends A {
-	
-	void m1B() {
-		super.m1A();
-		
-		System.out.println("B-m1");
-	}
-	
-	void m2B() {
-		System.out.println("B-m2");
+public class B {
+
+	public static void main(String[] args) {
+		for(int i=1;i<=3;i++) {
+			for(int j=3;j>=i;j--)
+			System.out.print(j+" ");
+		}
+		System.out.println();
+
 	}
 
 }
